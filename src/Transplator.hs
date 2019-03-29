@@ -26,6 +26,8 @@ videoFPS = 30
 --                 (fmap ImageRGB8 <$> getFrame) <* cleanup
 -- someFunc :: IO ()
 -- someFunc = putStrLn "someFunc"
+
+-- transplate ==> 1920 x 1080px x 1920 frames takes 11Gb memory. what to do?
 transplate :: IO ()
 transplate = do
     initFFmpeg
